@@ -12,6 +12,23 @@ import q47_permutations_ii
 
 
 #####
+# 动态规划
+#####
+
+# 状态转移
+import q53_maximum_subarray
+# 搞清楚状态转移是什么, 是否节约了时间
+
+# 回溯
+import q131_palindrome_partitioning
+# 重点回顾: 从两个方向考虑回溯填表
+import q132_palindrome_partitioning_ii
+# 重点仍然是填表的顺序, 如何填表是合理的?
+# 定位瓶颈并针对优化
+# 总的来说这道题局限于回文的特点
+
+
+#####
 # 图
 #####
 
