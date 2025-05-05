@@ -16,6 +16,11 @@ import q40_combination_sum_II
 import q47_permutations_ii
 # 重点, 回顾思路
 
+#####
+# 二分\分治
+#####
+import q57_insert_interval
+# 重做反思
 
 #####
 # 动态规划
