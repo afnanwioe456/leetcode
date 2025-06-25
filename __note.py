@@ -4,6 +4,16 @@
 import q84_largest_rectangle_in_histogram
 import q32_longest_valid_parentheses
 
+#####
+# 列表
+#####
+
+# 时刻注意数组越界问题
+import q25_reverse_nodes_in_k_group
+import q20_valid_parenthesis
+
+# KMP
+import q28_first_occurrence_in_a_string
 
 ##### 
 # 集合
