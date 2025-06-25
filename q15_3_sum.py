@@ -63,12 +63,12 @@ class Solution:
                 c = unique[r]
                 s = a + b + c
                 if s < 0:
-                    if a + 2 * c < 0:
-                        break
+                    # if a + 2 * c < 0:
+                    #     break
                     l += 1
                 elif s > 0:
-                    if a + 2 * b > 0:
-                        break
+                    # if a + 2 * b > 0:
+                    #     break
                     r -= 1
                 else:
                     res.append([a, b, c]) 
@@ -77,8 +77,33 @@ class Solution:
 
         return res
 
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
+        # 6.24重做
+        nums.sort()
+        dic = {}
+        res = []
+        n = len(nums)
+        for i in range(n):
+            dic[nums[i]] = i
 
+        prev_a, prev_b = None, None
+        for i in range(n - 1):
+            a = nums[i]
+            if a == prev_a:
+                continue
+            prev_a = a
+            for j in range(i + 1, n):
+                b = nums[j]
+                if b == prev_b:
+                    continue
+                prev_b = b
+                k = dic.get(-a - b)
+                if k and k > j:
+                    res.append([a, b, -a - b])
         
+        return res
+
+
 if __name__ == '__main__':
     s = Solution()
     nums = [-1, 0, 1, 2, -1, -4]

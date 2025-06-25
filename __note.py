@@ -2,6 +2,7 @@
 # 重点
 #####
 import q84_largest_rectangle_in_histogram
+import q32_longest_valid_parentheses
 
 
 ##### 
