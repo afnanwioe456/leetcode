@@ -94,7 +94,30 @@ class Solution:
         
         return res
 
+    def longestValidParentheses(self, s: str) -> int:
+        # 6.26重做
+        res = 0
+        stack = []
+        for c in s:
+            if c == '(':
+                stack.append(0)
+            else:
+                cur = 0
+                if stack and stack[-1] > 0:
+                    cur += stack.pop()
+                if len(stack) == 0:
+                    res = max(res, cur)
+                    continue
+                stack.pop()
+                cur += 2
+                if stack and stack[-1] > 0:
+                    cur += stack.pop()
+                stack.append(cur)
+                res = max(res, cur)
 
+        return res
+
+        
 if __name__ == '__main__':
     so = Solution()
     s = "()()(()"

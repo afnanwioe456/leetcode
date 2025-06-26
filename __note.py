@@ -2,6 +2,8 @@
 # 重点
 #####
 import q84_largest_rectangle_in_histogram
+import q30_substring_with_concatenation_of_all_words
+import q31_next_permutation
 import q32_longest_valid_parentheses
 
 #####
