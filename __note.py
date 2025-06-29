@@ -56,6 +56,8 @@ import q132_palindrome_partitioning_ii
 # 定位瓶颈并针对优化
 # 总的来说这道题局限于回文的特点
 
+import q87_scramble_string
+
 
 #####
 # 图
