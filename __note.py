@@ -35,6 +35,7 @@ import q47_permutations_ii
 
 # 并查集
 import q128_longest_consecutive_seq
+import q130_surrounded_regions
 
 #####
 # 二分\分治
