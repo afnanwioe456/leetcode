@@ -33,6 +33,9 @@ import q40_combination_sum_II
 import q47_permutations_ii
 # 重点, 回顾思路
 
+# 并查集
+import q128_longest_consecutive_seq
+
 #####
 # 二分\分治
 #####
