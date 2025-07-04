@@ -18,6 +18,12 @@ import q82_remove_duplicates_ii
 import q25_reverse_nodes_in_k_group
 import q20_valid_parenthesis
 
+# 链表+环 思路
+# 快慢指针解决 +1 /2 问题
+import q147_insertion_sort_list
+import q142_linked_list_cycle
+import q148_sort_list
+
 # KMP
 import q28_first_occurrence_in_a_string
 
