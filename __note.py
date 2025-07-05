@@ -24,6 +24,9 @@ import q147_insertion_sort_list
 import q142_linked_list_cycle
 import q148_sort_list
 
+# 桶
+import q164_maximum_gap
+
 # KMP
 import q28_first_occurrence_in_a_string
 
