@@ -30,6 +30,9 @@ import q164_maximum_gap
 # KMP
 import q28_first_occurrence_in_a_string
 
+# 排序与自定义比较
+import q179_largest_number
+
 ##### 
 # 集合
 #####
@@ -58,9 +61,10 @@ import q57_insert_interval
 
 # 状态转移
 import q53_maximum_subarray
+import q174_dungeon_game
 # 搞清楚状态转移是什么, 是否节约了时间
-import q72_edit_distance
 # 重点回顾这道题!!!
+import q72_edit_distance
 
 # 回溯
 import q131_palindrome_partitioning
