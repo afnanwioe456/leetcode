@@ -53,6 +53,24 @@ class Solution:
 
         return total
 
+    def trap(self, height: List[int]) -> int:
+        stack = []
+        res = 0
+
+        for i, h in enumerate(height):
+            prev = 0
+            while stack:
+                index = stack.pop()
+                h_i = height[index]
+                res += (i - index - 1) * (min(h_i, h) - prev)
+                prev = h_i
+                if h_i > h:
+                    stack.append(index)
+                    break
+            stack.append(i)
+
+        return res
+            
 
 if __name__ == '__main__':
     s = Solution()
@@ -60,3 +78,7 @@ if __name__ == '__main__':
     print(s.trap(height))
     height = [4, 2, 0, 3, 2, 5]
     print(s.trap(height))
+    height = [2, 0, 3, 0, 4]
+    assert s.trap(height) == 5
+    height = [4, 0, 3, 0, 4]
+    assert s.trap(height) == 9

@@ -7,6 +7,9 @@ import q31_next_permutation
 import q32_longest_valid_parentheses
 import q74_search_2D_matrix
 import q97_interleaving_string
+# 乘积 -> 维护候选值 
+# 遇到0怎么办?
+import tq152_max_prod_subarray 
 
 #####
 # 列表
@@ -94,3 +97,11 @@ import q886_possible_bipartition
 
 # 匹配 最大流
 
+#####
+# HOT 100
+#####
+
+# tq169_majority_element 寻找出现次数超出n/2的元素 -> 对消
+# tq198_house_robber 不能抢相邻房子 -> 保存多个状态
+# tq200_number_of_islands 01图连通性 -> dfs递归
+# tq238_product_of_arr_except_self 不能使用除法 -> 前后缀思想, 需要考虑0么?

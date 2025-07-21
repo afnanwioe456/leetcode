@@ -74,7 +74,7 @@ class Solution(object):
             res *= nums[i]
         return res
 
-    def maxProduct3(self, nums):
+    def maxProduct(self, nums):
         curr_max = None
         curr_min = None  # 同时维护最大值和最小值
         res = -2 * 10 ** 5
@@ -89,8 +89,28 @@ class Solution(object):
             res = max(curr_max, res)
         return res
 
+    def maxProduct(self, nums):
+        # 一前一后遍历, 只需要维护前后缀总是能找到最大的, 为什么? -> 贪心
+        # 2 0 2 -2 2 -2 0 4
+        n = len(nums)
+
+        pre, suf = 1, 1
+        res = float('-inf')
+
+        for i in range(n):
+            if pre == 0:
+                pre = 1
+            if suf == 0:
+                suf = 1
+
+            pre *= nums[i]
+            suf *= nums[n - i - 1]
+
+            res = max(res, pre, suf)
+
+        return res
 
 if __name__ =='__main__':
     nums = [3, 0, 2, -2]
     s = Solution()
-    print(s.maxProduct3(nums))
+    print(s.maxProduct(nums))
