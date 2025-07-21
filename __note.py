@@ -11,6 +11,15 @@ import q97_interleaving_string
 # 遇到0怎么办?
 import tq152_max_prod_subarray 
 
+# 接雨水: 
+# 双端指针: 如何移动指针? 当前指针位置能接多少水? -> 维护最长木板
+# 单调栈: 弹出的索引位置与当前位置之间能接多少水? -> 利用单调性
+import tq42_trapping_rain_water
+
+# 找零
+# dfs/dp: 常规状态记忆; 只需要最短路径 -> 借助bfs寻找最短/提前停止
+import tq322_coin_change
+
 #####
 # 列表
 #####
@@ -105,3 +114,4 @@ import q886_possible_bipartition
 # tq198_house_robber 不能抢相邻房子 -> 保存多个状态
 # tq200_number_of_islands 01图连通性 -> dfs递归
 # tq238_product_of_arr_except_self 不能使用除法 -> 前后缀思想, 需要考虑0么?
+# tq647_palindromic_substrings 回文中心扩展
